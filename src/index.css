@@ -5,9 +5,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  animation: bounce 1s;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  10%{ transform: translateX(-20px);}
+  25% { transform: translateY(-30px); }
+  35% { transform: translateX(-30px);}
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+body{
+  animation: bounce 1s;
+}
+html{
+  background-color: blue;
+}
+.itemscenter {
+  align-items: center;
+}
+.flex-col{
+  flex-direction: column;
 }
